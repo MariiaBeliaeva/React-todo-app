@@ -38,7 +38,7 @@ const App = () => {
 
       {tasks.length > 0 ? (
         <ul className="todo-list">
-          {tasks.map((todo, index) => (
+          {tasks?.map((todo, index) => (
             <div className="todo">
               <li key={index}>{todo}</li>
               <button
